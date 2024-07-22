@@ -36,4 +36,5 @@ jobs:
             sudo git pull origin main
             sudo npm install
             sudo npm run build
-            sudo pm2 restart all
+            sudo nohup npm run dev > dev.log 2>&1 &
+            sudo pm2 restart nextjs-demo
