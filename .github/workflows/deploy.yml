@@ -36,5 +36,6 @@ jobs:
             sudo git pull origin main
             sudo npm install
             sudo npm run build
+            sudo npm start
             sudo nohup npm run dev > dev.log 2>&1 &
           
