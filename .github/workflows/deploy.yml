@@ -38,4 +38,6 @@ jobs:
             sudo npm run build
             sudo npm start
             sudo nohup npm run dev > dev.log 2>&1 &
+            sudo pm2 restart all
+
           
