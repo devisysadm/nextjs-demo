@@ -33,7 +33,7 @@ jobs:
           script: |
             git config --global --add safe.directory /home/ubuntu/nextjs-demo/nextjs-demo
             cd /home/ubuntu/nextjs-demo/nextjs-demo
-            git pull origin main
-            npm install
-            npm run build
-            pm2 restart all
+            sudo git pull origin main
+            sudo npm install
+            sudo npm run build
+            sudo pm2 restart all
