@@ -37,6 +37,7 @@ jobs:
             sudo git pull origin developer
             sudo npm install
             sudo npm run build
-            pm2 start npm --name "nextjs-demo" -- start
+            sudo pm2 stop
+            sudo pm2 start npm --name "nextjs-demo" -- start
 
           
