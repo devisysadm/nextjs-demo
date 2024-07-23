@@ -32,6 +32,9 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             git config --global --add safe.directory /home/ubuntu/nextjs-demo/nextjs-demo
+            cd /home/ubuntu/nextjs-demo
+            sudo rm -rf * 
+            sudo git clone https://github.com/devisysadm/nextjs-demo.git
             cd /home/ubuntu/nextjs-demo/nextjs-demo
             sudo chown -R ubuntu:ubuntu .
             sudo chmod -R 777 *
