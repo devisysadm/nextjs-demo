@@ -34,7 +34,8 @@ jobs:
             git config --global --add safe.directory /home/ubuntu/nextjs-demo/nextjs-demo
             cd /home/ubuntu/nextjs-demo/nextjs-demo
             sudo chown -R ubuntu:ubuntu .
-            sudo git pull origin main
+            sudo git checkout developer
+            sudo git pull origin developer
             sudo npm install
             sudo npm run build
             pm2 start npm --name "nextjs-demo" -- start
