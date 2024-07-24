@@ -30,8 +30,8 @@ jobs:
             cd /home/ubuntu/nextjs-demo/nextjs-demo
             sudo chown -R ubuntu:ubuntu .
             sudo git pull
-            sudo chmod -R 777 *
             sudo npm install
+            sudo chmod -R 777 *
             sudo npm run build
             sudo nohup npm run dev > dev.log 2>&1 &
 
