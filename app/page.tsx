@@ -53,7 +53,7 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find Hello y55555555555555555!3333333 in-depth information about Next.js features and API.
+            Find This is my hello test!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ in-depth information about Next.js features and API.
           </p>
         </a>
 
